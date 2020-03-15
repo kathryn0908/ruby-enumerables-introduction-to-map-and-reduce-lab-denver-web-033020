@@ -25,10 +25,10 @@ end
 def reduce_to_any_true(source_array)
   i = 0 
   while i < source_array.length do 
-    if i  
-      return true 
-    else !i
+    if !i  
       return false 
+    else 
+      return true 
     end
     i +=1 
   end 
